@@ -6,6 +6,12 @@ export class Login {
         this.page = page
     }
 
+    async do(email, password, username){
+        await this.visit()
+        await this.submit(email, password)
+        await this.isLoggedIn(username)
+    }
+    
     async visit() {
         await this.page.goto('http://localhost:3000/admin/login')
         const loginForm = this.page.locator('.login-form')
@@ -23,8 +29,8 @@ export class Login {
         await expect(alert).toHaveText(text)
     }
     
-    async isLoggedIn() {
-        await this.page.waitForLoadState('networkidle')
-        await expect(this.page).toHaveURL(/.*admin/)
+    async isLoggedIn(username) {
+        const loggedUser = this.page.locator('.logged-user')
+        await expect(loggedUser).toHaveText(`Olá, ${username}`)
     }
 }
