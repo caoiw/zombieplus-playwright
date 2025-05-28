@@ -1,0 +1,71 @@
+{
+  "create": {
+    "title": "The Walking Dead",
+    "overview": "Um pequeno grupo de sobreviventes luta para se manter vivo após um apocalipse zumbi que devastou o mundo.",
+    "company": "Universal Pictures",
+    "seasons": "11",
+    "release_year": 2010,
+    "featured": true,
+    "cover": "/covers/tvshows/the-walking-dead.jpg"
+  },
+  "duplicate": {
+    "title": "Z Nation",
+    "overview": "Três anos após o surto zumbi, um grupo transporta o único sobrevivente imune conhecido pelos EUA para desenvolver uma vacina.",
+    "company": "Paramount Pictures",
+    "seasons": "5",
+    "release_year": 2014,
+    "featured": false,
+    "cover": "/covers/tvshows/z-nation.jpg"
+  },
+  "to_remove": {
+    "title": "Black Summer",
+    "overview": "Durante os primeiros dias de um apocalipse zumbi, uma mãe é separada da filha e embarca numa jornada perigosa para reencontrá-la.",
+    "company": "Netflix",
+    "seasons": "2",
+    "release_year": 2019,
+    "featured": false,
+    "cover": "/covers/tvshows/black-summer.jpg"
+  },
+  "search": {
+    "input": "zumbi",
+    "outputs": [],
+    "data": [
+      {
+        "title": "Kingdom",
+        "overview": "Na Coreia medieval, uma praga misteriosa transforma os mortos em monstros famintos. Um príncipe luta para salvar seu povo.",
+        "company": "Netflix",
+        "seasons": 2,
+        "release_year": 2019,
+        "featured": true,
+        "cover": "/covers/tvshows/kingdom.jpg"
+      },
+      {
+        "title": "iZombie",
+        "overview": "Uma médica legista que virou zumbi ajuda a polícia a resolver crimes ao consumir cérebros e herdar memórias das vítimas.",
+        "company": "Sony Pictures",
+        "seasons": 5,
+        "release_year": 2015,
+        "featured": false,
+        "cover": "/covers/tvshows/izombie.jpg"
+      },
+      {
+        "title": "All of Us Are Dead",
+        "overview": "Um vírus zumbi se espalha em uma escola coreana, deixando os estudantes presos enquanto lutam por suas vidas.",
+        "company": "Netflix",
+        "seasons": 1,
+        "release_year": 2022,
+        "featured": true,
+        "cover": "/covers/tvshows/all-of-us-are-dead.jpg"
+      },
+      {
+        "title": "Resident Evil",
+        "overview": "Em um futuro distópico, a corporação Umbrella é responsável por um surto global que transforma humanos em zumbis.",
+        "company": "Netflix",
+        "seasons": 1,
+        "release_year": 2022,
+        "featured": false,
+        "cover": "/covers/tvshows/resident-evil.jpg"
+      }
+    ]
+  }
+}
