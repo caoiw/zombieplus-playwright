@@ -44,6 +44,13 @@ export class Movies {
         await this.submit()
     }
 
+    async search(target) {
+        await this.page.getByPlaceholder('Busque pelo nome')
+            .fill(target)
+
+        await this.page.click('.actions button')
+    }
+
     async alertHaveText(target) {
         await expect(this.page.locator('.alert')).toHaveText(target)
     }
@@ -51,5 +58,10 @@ export class Movies {
     async remove(title) {
         await this.page.getByRole('row', {name: title}).getByRole('button').click()
         await this.page.click('.confirm-removal')
+    }
+    
+    async tableHave(content) {
+        const cells = this.page.locator('table >> role=cell').filter({ hasText: /Zumbi/ })
+        await expect(cells).toContainText(content)    
     }
 }
